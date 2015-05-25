@@ -1,0 +1,270 @@
+@import "variables.less";
+@import "mixins.less";
+@import "fonts.less";
+
+
+body{
+	width:100%;
+	height:100%;
+	background-color: @bodybg;
+	margin:0px;
+	font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+	width:90%;
+	max-width:1280px;
+	margin:0 auto;
+}
+.main-container{
+	.content-section{
+		.wrapper{
+			.header{
+				overflow: hidden;
+				padding: 30px 0px;
+				margin-bottom: 30px;
+				.logo{
+					float:left;
+					background: url('../images/logo.png')no-repeat;
+					width: 189px;
+					height:40px;
+				}
+				.user-info{
+					float:right;
+					.design{
+						background-color: @design;
+						border-radius:25px;
+						width: 34px;
+						height:34px;
+						padding: 5px;
+						.inlinestyle(@middle);
+
+					}
+					.user-msg{
+						.font(18px,'Roboto',@user-msg,500);
+						padding: 5px;
+						.inlinestyle(@middle);
+					}
+					.arrow-down{
+						padding: 5px;
+						border-right:2px solid @arrow-down;
+					    border-bottom:2px solid @arrow-down;
+					    width:15px;
+					    height:15px;
+					    margin-bottom: 5px;
+					    transform: rotate(45deg);
+					    .inlinestyle(@middle);
+					}
+				}
+			}//header
+			.main-usr-block{
+				overflow: hidden;
+				.usr-search-block{
+					float: left;
+					.usr-search-content{
+						border-radius: 5px;
+						background-color: @white;
+						width: 293px;
+						height: 566px;
+						
+						.empty-search-field{
+							width: 293px;
+							height: 54px;
+						}
+						.search-field{
+							.search-input{
+								.font(16px,'Roboto',@search-input,400);
+								text-align: left;
+								background: url('../images/search-icon.png')no-repeat;
+								height: 44px;
+								width: 293px;
+								border:none;
+								text-indent: 50px;
+								background-position:20px 15px;
+								background-color: @search-field;
+								outline:none;
+
+							}
+						}
+						.search-suggestions{
+							border-bottom:1px solid @user-search;
+							.search-time{
+								width: 293px;
+								padding:10px 10px 0px 10px;
+								text-align: right;
+								.font(12px,'Roboto',@search-input,100);
+								.search-instance{
+									.inlinestyle(@middle);
+									padding: 5px;
+								}
+								.no-of-chats{
+									.inlinestyle(@middle);
+									text-align: center;
+									color:@white;
+									background-color: @no-of-chats;
+									border-radius: 10px;
+									width:15px;
+									height: 15px;
+								}
+							}
+							.username-address{
+								padding: 0px 20px 5px 20px;
+								.username{
+									.font(14px,'Roboto',@black,300);
+								}
+								.user-address{
+
+									.font(14px,'Roboto',@search-input,300);
+								}
+							}
+							&:hover{
+								background-color: @user-hover;
+							}
+							
+						}
+						
+					}
+				}
+				.usr-order-block{
+					float:left;
+					margin-left: 10px;
+					.userchat-name-address{
+						background-color: @white;
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+						width:829px;
+						height: 54px;
+						padding:5px 20px;
+						margin-bottom: 2px;
+						.usr-chat-name{
+							.font(14px,'Roboto',@black,300);
+						}
+						.user-chat-address{
+							.font(14px,'Roboto',@search-input,300);
+						}
+					}
+					.user-chat-order-block{
+						overflow: hidden;
+						.user-chat-screen-block{
+							float:left;
+							background-color: @white;
+							width: 497px;
+							height: 450px;
+							.user-order-msg{
+								text-align: justify;
+								width: 257px;
+								height: 77px;
+								.font(12px,'Roboto',@search-input,300);
+								border-radius:5px;
+								padding:10px 20px;
+								background-color:@user-order-msg;
+								color:@user-order-text;
+								margin:20px;
+							}
+							.user-response-msg{
+								float:right;
+								text-align: justify;
+								margin-right:30px;
+								width: 210px;
+								height:36px;
+								border-radius: 5px;
+								padding:10px 20px;
+								background-color:@user-response-msg;
+								.font(12px,'Roboto',@white,300);							
+							}
+							.user-response-msg2{
+								float:right;
+								text-align: justify;
+								margin-right:30px;
+								margin-top:15px;
+								width: 342px;
+								height:56px;
+								border-radius: 5px;
+								padding:10px 20px;
+								background-color:@user-response-msg;
+								.font(12px,'Roboto',@white,300);							
+							}
+							.user-response-confirm{
+								float:right;
+								text-align: justify;
+								margin-right:160px;
+								margin-top:15px;
+								width: 205px;
+								height:36px;
+								border-radius: 5px;
+								padding:10px 20px;
+								background-color:@user-response-confirm;
+								.font(12px,'Roboto',@user-order-text,300);							
+							}
+							.user-order-msg2{
+								float:left;
+								margin:20px;
+								text-align: justify;
+								width: 257px;
+								height: 57px;
+								.font(12px,'Roboto',@search-input,300);
+								border-radius:5px;
+								padding:10px 20px;
+								background-color:@user-order-msg;
+								color:@user-order-text;
+								
+							}
+							.user-response-confirm-msg2{
+								float:right;
+								text-align: justify;
+								margin-right:30px;
+								width: 342px;
+								height:56px;
+								border-radius: 5px;
+								padding:10px 20px;
+								background-color:@user-response-msg;
+								.font(12px,'Roboto',@white,300);		
+							}
+						}
+						
+						.user-order-block{
+							float:right;
+						}
+					}
+					.user-chat-input-box{
+						padding: 10px;
+						background-color:@bodybg;
+							.msg-icon{
+								.inlinestyle(@middle);
+								background-color: @msg-icon;
+								width:35px;
+								height:35px;
+								border-radius: 20px;
+								text-align: center;
+								.centric{
+									.inlinestyle(@middle);
+									margin-top: 15px;
+									width: 5px;
+									height: 5px;
+									border-radius: 5px;
+									background-color: @centric;
+								}
+							}
+							.msg-box{
+								.inlinestyle(@middle);
+								width: 412px;
+								height:49px;
+								background-color: @white;
+								.font(14px,'Roboto',@search-input,300);
+								border-radius: 5px;	
+								.msg-arrow-icon{
+									background: url('../images/msg-arrow-icon.png')no-repeat;
+									background-position:370px 8px;
+									height:45px;
+								}
+										
+							}
+
+						}
+				}
+			}
+		}
+	}
+	.footer-section{
+
+	}	
+}
