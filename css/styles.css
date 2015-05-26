@@ -440,19 +440,18 @@ body {
   display: inline-block;
   vertical-align: middle;
   padding: 5px;
-  margin: 0px 10px;
+  width: 40%;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block .quantity {
   display: inline-block;
   vertical-align: middle;
   padding: 5px;
-  margin: 0px 8px;
-  margin: 0px 10px;
+  width: 15%;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block .price {
   display: inline-block;
   vertical-align: middle;
-  margin: 0px 10px;
+  width: 15%;
   padding: 5px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block .total-cost {
