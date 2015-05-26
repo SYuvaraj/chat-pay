@@ -79,6 +79,7 @@ body {
   border-radius: 5px;
   background-color: #ffffff;
   border: 1px solid #dfdfdf;
+  width: 100%;
   height: 733px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .empty-search-field {
@@ -107,7 +108,6 @@ body {
   border-bottom: 1px solid #ececec;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions .search-time {
-  width: 293px;
   padding: 10px 10px 0px 10px;
   text-align: right;
   font-size: 12px;
@@ -159,7 +159,6 @@ body {
   background-color: #ffffff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  width: 100%;
   height: 54px;
   padding: 5px 20px;
   margin-bottom: 2px;
@@ -180,13 +179,12 @@ body {
   overflow: hidden;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box {
+  width: 59%;
   float: left;
-  width: 60%;
-  margin-right: 7px;
+  margin-right: 6px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box .user-chat-screen-block {
   background-color: #ffffff;
-  width: 575px;
   height: 610px;
   padding-top: 15px;
 }
@@ -278,7 +276,6 @@ body {
   font-weight: 300;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box .user-chat-input-box {
-  width: 100%;
   text-align: left;
   padding: 10px;
   background-color: #ececec;
@@ -286,8 +283,7 @@ body {
   border-right: none;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box .user-chat-input-box .msg-icon {
-  display: inline-block;
-  vertical-align: middle;
+  float: left;
   background-color: #fafafa;
   width: 35px;
   height: 35px;
@@ -304,11 +300,12 @@ body {
   background-color: #808080;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box .user-chat-input-box .msg-box {
-  display: inline-block;
-  vertical-align: middle;
+  float: right;
+  width: 90%;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box .user-chat-input-box .msg-box .user-msg-input {
-  width: 500px;
+  width: 100%;
+  text-indent: 10px;
   height: 49px;
   font-size: 14px;
   font-family: 'Roboto';
@@ -316,7 +313,7 @@ body {
   font-weight: 300;
   border-radius: 5px;
   background: url('../images/msg-arrow-icon.png') no-repeat;
-  background-position: 450px 6px;
+  background-position: 95%;
   height: 45px;
   outline: none;
   appearance: none;
@@ -331,7 +328,7 @@ body {
   float: left;
   margin-left: 2px;
   background-color: #ffffff;
-  width: 39%;
+  width: 40%;
   border-bottom-right-radius: 5px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-block {
@@ -425,6 +422,7 @@ body {
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block {
   padding: 10px;
+  text-align: left;
   font-size: 12px;
   font-family: 'Roboto';
   color: #7d8b93;
@@ -433,7 +431,7 @@ body {
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block .product-close {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 8px;
+  margin: 8px 10px 0px 10px;
   width: 20px;
   height: 20px;
   background: url('../images/close.png') no-repeat;
@@ -442,28 +440,25 @@ body {
   display: inline-block;
   vertical-align: middle;
   padding: 5px;
-  width: 125px;
-  margin: 0px 8px;
+  margin: 0px 10px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block .quantity {
   display: inline-block;
   vertical-align: middle;
   padding: 5px;
   margin: 0px 8px;
-  width: 50px;
+  margin: 0px 10px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block .price {
   display: inline-block;
   vertical-align: middle;
-  margin: 0px 5px;
+  margin: 0px 10px;
   padding: 5px;
-  width: 50px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block .total-cost {
   display: inline-block;
   vertical-align: middle;
   padding: 5px;
-  width: 50px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-cost .cost-calculation {
   width: 100%;
@@ -487,9 +482,9 @@ body {
   width: 100%;
   padding: 10px 0px;
   background-color: #f8f8f8;
+  text-align: center;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-cost .total-cost .total-label {
-  width: 31%;
   font-size: 12px;
   font-family: 'Roboto';
   color: #000000;
@@ -512,7 +507,7 @@ body {
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-cost .total-cost .value {
   padding: 10px;
-  width: 27%;
+  margin: 0px 15px;
   font-size: 12px;
   font-family: 'Roboto';
   color: #000000;
