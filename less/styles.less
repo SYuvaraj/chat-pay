@@ -61,10 +61,12 @@ body{
 				overflow: hidden;
 				.usr-search-block{
 					float: left;
+					width:24%;//added
 					.usr-search-content{
 						border-radius: 5px;
 						background-color: @white;
-						width: 293px;
+						border:1px solid @screenborder;
+						// width: 293px;
 						height: 733px;//666px;//566
 						
 						.empty-search-field{
@@ -77,7 +79,7 @@ body{
 								text-align: left;
 								background: url('../images/search-icon.png')no-repeat;
 								height: 44px;
-								width: 293px;
+								width: 100%;//293px;
 								border:none;
 								text-indent: 50px;
 								background-position:20px 15px;
@@ -86,49 +88,54 @@ body{
 
 							}
 						}
-						.search-suggestions{
-							border-bottom:1px solid @user-search;
-							.search-time{
-								width: 293px;
-								padding:10px 10px 0px 10px;
-								text-align: right;
-								.font(12px,'Roboto',@search-input,100);
-								.search-instance{
-									.inlinestyle(@middle);
-									padding: 5px;
+						.scrollable-content{
+							overflow:scroll;
+							.search-suggestions{
+								border-bottom:1px solid @user-search;
+								.search-time{
+									width: 293px;
+									padding:10px 10px 0px 10px;
+									text-align: right;
+									.font(12px,'Roboto',@search-input,100);
+									.search-instance{
+										.inlinestyle(@middle);
+										padding: 5px;
+									}
+									.no-of-chats{
+										.inlinestyle(@middle);
+										text-align: center;
+										color:@white;
+										background-color: @no-of-chats;
+										border-radius: 10px;
+										width:15px;
+										height: 15px;
+									}
 								}
-								.no-of-chats{
-									.inlinestyle(@middle);
-									text-align: center;
-									color:@white;
-									background-color: @no-of-chats;
-									border-radius: 10px;
-									width:15px;
-									height: 15px;
-								}
-							}
-							.username-address{
-								padding: 0px 20px 5px 20px;
-								.username{
-									.font(14px,'Roboto',@black,300);
-								}
-								.user-address{
+								.username-address{
+									padding: 0px 20px 5px 20px;
+									.username{
+										.font(14px,'Roboto',@black,300);
+									}
+									.user-address{
 
-									.font(14px,'Roboto',@search-input,300);
+										.font(14px,'Roboto',@search-input,300);
+									}
 								}
+								&:hover{
+									background-color: @user-hover;
+								}
+								
 							}
-							&:hover{
-								background-color: @user-hover;
-							}
-							
 						}
-						
 					}
 				}
 				.usr-order-block{
 					float:left;
 					margin-left: 10px;
 					width:75%;//added now
+					border:1px solid @screenborder;
+					border-radius:5px;
+
 					.userchat-name-address{
 						background-color: @white;
 						border-top-left-radius: 5px;
@@ -149,7 +156,6 @@ body{
 						.userscreen-chat-box{
 							float:left;
 							width:60%;//added now
-							border:1px solid @screenborder;
 							margin-right: 7px;//10px;
 							.user-chat-screen-block{
 								background-color: @white;
@@ -232,6 +238,8 @@ body{
 								text-align: left;
 								padding: 10px;
 								background-color:@bodybg;
+								border-top:1px solid @screenborder;
+								border-right:none;
 								.msg-icon{
 									.inlinestyle(@middle);
 									background-color: @msg-icon;
@@ -251,13 +259,13 @@ body{
 								.msg-box{
 									.inlinestyle(@middle);
 									.user-msg-input{
-										width: 515px;//420px;
+										width: 500px;//420px;
 										height:49px;
 										background-color: @white;
 										.font(14px,'Roboto',@search-input,300);
 										border-radius: 5px;	
 										background: url('../images/msg-arrow-icon.png')no-repeat;
-										background-position:470px 6px;//370
+										background-position:450px 6px;//370
 										height:45px;
 										outline: none;
 										appearance: none;
@@ -303,6 +311,7 @@ body{
 									padding:10px 20px;
 									.grocery{
 										float:left;
+
 										select{
 											.inlinestyle(@middle);
 											appearance:none;
@@ -317,17 +326,10 @@ body{
 											border-bottom:1px solid @bodybg;
 											.font(12px,'Roboto',@grocery,500);
 											padding:5px;
+											outline:none;
+											background:url('../images/grocery-down.png')no-repeat;
+											background-position: right;
 										}
-										.grocery-arrow{
-											.inlinestyle(@middle);
-											width: 10px;
-											height:10px;
-											border-top:10px solid @grocery-arrow;
-											border-left: 10px solid transparent;
-											border-right:10px solid transparent;
-											border-bottom:10px solid transparent;
-										}
-										
 									}
 									.spencers{
 										float:right;
@@ -345,17 +347,9 @@ body{
 											border-bottom:1px solid @bodybg;
 											.font(12px,'Roboto',@grocery,500);
 											padding:5px;
-
-										}
-										.spencers-arrow{
-											.inlinestyle(@middle);
-											width: 10px;
-											height:10px;
-											border-top:10px solid @grocery-arrow;
-											border-left: 10px solid transparent;
-											border-right:10px solid transparent;
-											border-bottom:10px solid transparent;
-
+											outline:none;
+											background:url('../images/grocery-down.png')no-repeat;
+											background-position: right;
 										}
 									}
 								}
@@ -387,7 +381,8 @@ body{
 										.inlinestyle(@middle);
 										padding: 5px;
 										width: 125px;
-										margin:0px 10px;
+										margin:0px 8px;
+
 									}
 									.quantity{
 										.inlinestyle(@middle);
@@ -495,18 +490,19 @@ body{
 							}
 							.message-template{
 								.font(18px,'Roboto',@user-msg,400);
-								padding:20px;
+								padding:21px;
 								width: 100%;
 								.msg-temp{
-									margin-bottom: 5px;
+									margin-bottom: 8px;
 								}
 								.msg1{
 									overflow:hidden;
-									// width: 365px;//408px;//240px;
 									border-bottom:1px solid @bodybg;
 									padding:5px;
 									.msg{
+										width: 235px;
 										float:left;
+										text-align: justify;
 										.font(12px,'Roboto',@msg,400);
 										
 									}
@@ -516,8 +512,10 @@ body{
 										height:20px;
 										width:20px;
 									}
+									.arrow-pos{margin-top:20px;}
 								}
 								.end{
+									margin-top:20px;
 									border:none;
 								}
 							}

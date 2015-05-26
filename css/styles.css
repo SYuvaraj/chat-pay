@@ -73,11 +73,12 @@ body {
 }
 .main-container .content-section .wrapper .main-usr-block .usr-search-block {
   float: left;
+  width: 24%;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content {
   border-radius: 5px;
   background-color: #ffffff;
-  width: 293px;
+  border: 1px solid #dfdfdf;
   height: 733px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .empty-search-field {
@@ -92,17 +93,20 @@ body {
   text-align: left;
   background: url('../images/search-icon.png') no-repeat;
   height: 44px;
-  width: 293px;
+  width: 100%;
   border: none;
   text-indent: 50px;
   background-position: 20px 15px;
   background-color: #f8f8f8;
   outline: none;
 }
-.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .search-suggestions {
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content {
+  overflow: scroll;
+}
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions {
   border-bottom: 1px solid #ececec;
 }
-.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .search-suggestions .search-time {
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions .search-time {
   width: 293px;
   padding: 10px 10px 0px 10px;
   text-align: right;
@@ -111,12 +115,12 @@ body {
   color: #929292;
   font-weight: 100;
 }
-.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .search-suggestions .search-time .search-instance {
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions .search-time .search-instance {
   display: inline-block;
   vertical-align: middle;
   padding: 5px;
 }
-.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .search-suggestions .search-time .no-of-chats {
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions .search-time .no-of-chats {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -126,28 +130,30 @@ body {
   width: 15px;
   height: 15px;
 }
-.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .search-suggestions .username-address {
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions .username-address {
   padding: 0px 20px 5px 20px;
 }
-.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .search-suggestions .username-address .username {
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions .username-address .username {
   font-size: 14px;
   font-family: 'Roboto';
   color: #000000;
   font-weight: 300;
 }
-.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .search-suggestions .username-address .user-address {
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions .username-address .user-address {
   font-size: 14px;
   font-family: 'Roboto';
   color: #929292;
   font-weight: 300;
 }
-.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .search-suggestions:hover {
+.main-container .content-section .wrapper .main-usr-block .usr-search-block .usr-search-content .scrollable-content .search-suggestions:hover {
   background-color: #f8f8f8;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block {
   float: left;
   margin-left: 10px;
   width: 75%;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .userchat-name-address {
   background-color: #ffffff;
@@ -176,7 +182,6 @@ body {
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box {
   float: left;
   width: 60%;
-  border: 1px solid #dfdfdf;
   margin-right: 7px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box .user-chat-screen-block {
@@ -277,6 +282,8 @@ body {
   text-align: left;
   padding: 10px;
   background-color: #ececec;
+  border-top: 1px solid #dfdfdf;
+  border-right: none;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box .user-chat-input-box .msg-icon {
   display: inline-block;
@@ -301,7 +308,7 @@ body {
   vertical-align: middle;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .userscreen-chat-box .user-chat-input-box .msg-box .user-msg-input {
-  width: 515px;
+  width: 500px;
   height: 49px;
   font-size: 14px;
   font-family: 'Roboto';
@@ -309,7 +316,7 @@ body {
   font-weight: 300;
   border-radius: 5px;
   background: url('../images/msg-arrow-icon.png') no-repeat;
-  background-position: 470px 6px;
+  background-position: 450px 6px;
   height: 45px;
   outline: none;
   appearance: none;
@@ -372,16 +379,9 @@ body {
   color: #242424;
   font-weight: 500;
   padding: 5px;
-}
-.main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .order-options .grocery .grocery-arrow {
-  display: inline-block;
-  vertical-align: middle;
-  width: 10px;
-  height: 10px;
-  border-top: 10px solid #cacaca;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  outline: none;
+  background: url('../images/grocery-down.png') no-repeat;
+  background-position: right;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .order-options .spencers {
   float: right;
@@ -404,16 +404,9 @@ body {
   color: #242424;
   font-weight: 500;
   padding: 5px;
-}
-.main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .order-options .spencers .spencers-arrow {
-  display: inline-block;
-  vertical-align: middle;
-  width: 10px;
-  height: 10px;
-  border-top: 10px solid #cacaca;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  outline: none;
+  background: url('../images/grocery-down.png') no-repeat;
+  background-position: right;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .order-search {
   background-color: #f8f8f8 !important;
@@ -450,7 +443,7 @@ body {
   vertical-align: middle;
   padding: 5px;
   width: 125px;
-  margin: 0px 10px;
+  margin: 0px 8px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .order-details-block .product-info-block .quantity {
   display: inline-block;
@@ -572,11 +565,11 @@ body {
   font-family: 'Roboto';
   color: #009bf8;
   font-weight: 400;
-  padding: 20px;
+  padding: 21px;
   width: 100%;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .message-template .msg-temp {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .message-template .msg1 {
   overflow: hidden;
@@ -584,7 +577,9 @@ body {
   padding: 5px;
 }
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .message-template .msg1 .msg {
+  width: 235px;
   float: left;
+  text-align: justify;
   font-size: 12px;
   font-family: 'Roboto';
   color: #a3a3a3;
@@ -596,7 +591,11 @@ body {
   height: 20px;
   width: 20px;
 }
+.main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .message-template .msg1 .arrow-pos {
+  margin-top: 20px;
+}
 .main-container .content-section .wrapper .main-usr-block .usr-order-block .user-chat-order-block .user-order-block .message-template .end {
+  margin-top: 20px;
   border: none;
 }
 .main-container .footer-section {
